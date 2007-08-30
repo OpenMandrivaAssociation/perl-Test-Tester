@@ -1,5 +1,5 @@
 %define module	Test-Tester
-%define version	0.104
+%define version	0.105
 %define release %mkrel 1
 
 Summary:	Ease testing test modules built with Test::Builder
