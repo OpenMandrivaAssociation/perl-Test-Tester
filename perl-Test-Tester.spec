@@ -1,6 +1,6 @@
 %define module	Test-Tester
 %define version	0.107
-%define release %mkrel 7
+%define release %mkrel 8
 
 Summary:	Ease testing test modules built with Test::Builder
 Name:		perl-%{module}
