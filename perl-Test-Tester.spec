@@ -3,7 +3,7 @@
 Summary:	Ease testing test modules built with Test::Builder
 Name:		perl-%{module}
 Version:	0.107
-Release:	10
+Release:	11
 License:	GPLv2 or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{module}/
