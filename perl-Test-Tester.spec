@@ -2,12 +2,12 @@
 
 Summary:	Ease testing test modules built with Test::Builder
 Name:		perl-%{module}
-Version:	0.107
-Release:	14
+Version:	%perl_convert_version 0.109
+Release:	1
 License:	GPLv2 or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{module}/
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Test/%{module}-%{version}.tar.bz2
+Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/Test/Test-Tester-0.109.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl-devel
 
@@ -25,7 +25,7 @@ allows you to test it with the minimum of effort.
 %check
 make test
 
-%install
+install
 %makeinstall_std
 
 %files
@@ -33,4 +33,5 @@ make test
 %{perl_vendorlib}/Test/Tester
 %{perl_vendorlib}/Test/Tester.pm
 %{_mandir}/man3/*
+
 
