@@ -1,26 +1,28 @@
 %define module	Test-Tester
+%define upstream_version 0.109
 
 Summary:	Ease testing test modules built with Test::Builder
 Name:		perl-%{module}
-Version:	0.107
-Release:	14
-License:	GPLv2 or Artistic
+Version:	%perl_convert_version %{upstream_version}
+Release:	1
+License:	GPL or Artistic
 Group:		Development/Perl
+Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/Test/Test-Tester-%{upstream_version}.tar.gz
 Url:		http://search.cpan.org/dist/%{module}/
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Test/%{module}-%{version}.tar.bz2
-BuildArch:	noarch
+
 BuildRequires:	perl-devel
+BuildArch:	noarch
 
 %description
 If you have written a test module based on Test::Builder then Test::Tester
 allows you to test it with the minimum of effort.
 
 %prep
-%setup -qn %{module}-%{version}
+%setup -qn %{module}-%{upstream_version}
 
 %build
 %__perl Makefile.PL INSTALLDIRS=vendor
-%make
+make
 
 %check
 make test
@@ -30,7 +32,6 @@ make test
 
 %files
 %doc CHANGES README TODO
+%{_mandir}/*/*
 %{perl_vendorlib}/Test/Tester
 %{perl_vendorlib}/Test/Tester.pm
-%{_mandir}/man3/*
-
