@@ -3,7 +3,7 @@
 Summary:	Ease testing test modules built with Test::Builder
 Name:		perl-%{module}
 Version:	0.107
-Release:	10
+Release:	11
 License:	GPL or Artistic
 Group:		Development/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Test/%{module}-%{version}.tar.bz2
