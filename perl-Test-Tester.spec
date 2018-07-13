@@ -10,6 +10,7 @@ Group:		Development/Perl
 Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/Test/Test-Tester-%{upstream_version}.tar.gz
 Url:		http://search.cpan.org/dist/%{module}/
 
+BuildRequires:	perl(Test::Builder)
 BuildRequires:	perl-devel
 BuildArch:	noarch
 
