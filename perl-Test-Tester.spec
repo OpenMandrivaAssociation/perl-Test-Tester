@@ -7,7 +7,7 @@ Release:	1
 License:	GPL or Artistic
 Group:		Development/Perl
 Source0:	https://cpan.metacpan.org/modules/by-module/Test/Test-Tester-%{version}.tar.gz
-Url:		http://search.cpan.org/dist/%{module}/
+Url:		https://search.cpan.org/dist/%{module}/
 
 BuildRequires:	perl(Test::Builder)
 BuildRequires:	perl-devel
