@@ -9,6 +9,7 @@ Group:		Development/Perl
 Source0:	https://cpan.metacpan.org/modules/by-module/Test/Test-Tester-%{version}.tar.gz
 Url:		https://search.cpan.org/dist/%{module}/
 
+BuildRequires:	make
 BuildRequires:	perl(Test::Builder)
 BuildRequires:	perl-devel
 BuildArch:	noarch
